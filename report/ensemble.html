@@ -1,0 +1,8 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><title>Проверка ансамбля и эфемерного узла</title><style>body{margin:0;padding:26px;font:17px Arial;background:#f4f5f7;color:#172030}h1{font-size:26px;margin:0 0 10px}p{font-size:14px;color:#49556a}pre{white-space:pre-wrap;word-break:break-word;background:white;padding:20px;border:1px solid #ccd2dc;line-height:1.65;font:16px Menlo,monospace}</style><h1>Проверка ансамбля и эфемерного узла</h1><p>Фрагменты фактических журналов · logs/ensemble.txt; logs/ephemeral-*.txt</p><pre>INITIAL server 1: Mode: follower
+INITIAL server 2: Mode: leader
+INITIAL server 3: Mode: follower
+ONE SERVER DOWN: create /hw4/quorum/one-down SUCCESS
+TWO SERVERS DOWN: client connection TIMEOUT, quorum unavailable
+RESTORED: create SUCCESS
+EPHEMERAL before quit: exists, value alive
+EPHEMERAL after creator quit: None (deleted)</pre></html>

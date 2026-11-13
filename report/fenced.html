@@ -1,0 +1,12 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><title>С защитой по эпохе</title><style>body{margin:0;padding:26px;font:17px Arial;background:#f4f5f7;color:#172030}h1{font-size:26px;margin:0 0 10px}p{font-size:14px;color:#49556a}pre{white-space:pre-wrap;word-break:break-word;background:white;padding:20px;border:1px solid #ccd2dc;line-height:1.65;font:16px Menlo,monospace}</style><h1>С защитой по эпохе</h1><p>Фрагменты фактических журналов · logs/fenced-20261114-005546</p><pre>2026-11-13T21:55:46Z A leader epoch=1
+2026-11-13T21:55:46Z A restore epoch=1 offset=0
+2026-11-13T21:56:00Z B leader epoch=2
+2026-11-13T21:56:00Z B restore epoch=2 offset=600
+2026-11-13T21:56:24Z B verified epoch=2 distinct_pairs=33585 occurrences_pairs=158841
+2026-11-13T21:56:24Z B записал результат epoch=2 pointer_version=1 distinct_pairs=33585 occurrences_pairs=158841
+2026-11-13T21:56:52Z A verified epoch=1 distinct_pairs=33585 occurrences_pairs=158841
+2026-11-13T21:56:52Z A BadVersionError epoch=1
+
+failover_seconds=11.196
+accepted_writes=1; pointer_version=1; author=B
+full_pairs_equal=True</pre></html>
