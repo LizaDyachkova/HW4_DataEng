@@ -43,7 +43,7 @@ kill -CONT PID
 * `scripts/experiments.py` — кворум, CLI ephemeral, SIGSTOP/SIGCONT, замеры, автоматические проверки.
 * `conf/1`–`conf/3` — фактически использованные конфигурации; `dataDir` пересоздаётся скриптом для текущего пути проекта.
 * `logs/` — исходные журналы и итоговые JSON с замерами.
-* `report/` — отчёт.
+* Отчёт предоставляется отдельно.
 
 В ZooKeeper находятся только метаданные: `/hw4/RUN/election`, `/epoch`, `/checkpoint`, `/result`, `/writes`. Большие счётчики сохраняются в локальном общем каталоге `state/RUN` в файлы с SHA-256 в имени. Файл полностью записывается и атомарно переименовывается до публикации указателя. Чекпоинт содержит позицию, все накопленные частоты и контрольную сумму.
 
@@ -69,15 +69,3 @@ kill -CONT PID
 - [ZooKeeper 3.9.6 Administrator Guide](https://zookeeper.apache.org/doc/r3.9.6/zookeeperAdmin.html)
 - [ZooKeeper Programmer Guide](https://zookeeper.apache.org/doc/r3.9.6/zookeeperProgrammers.html)
 - [Kazoo Basic Usage](https://kazoo.readthedocs.io/en/stable/basic_usage.html)
-
-## Публикация на GitHub
-
-Проект подготовлен отдельно от ДЗ 3; исходный репозиторий ДЗ 3 не изменён. Создайте пустой репозиторий `HW4_DataEng` в своём аккаунте, затем из этой папки выполните:
-
-```bash
-git branch -M main
-git remote add origin https://github.com/LizaDyachkova/HW4_DataEng.git
-git push -u origin main
-```
-
-Если используете ZIP без истории Git, сначала выполните `git init`, `git add .` и `git commit -m "Complete ZooKeeper lab"`. В архив не входят Java, бинарные копии ZooKeeper, служебные данные серверов и временные файлы состояния. Отчёт, исходники, производный вход, эталон, итоговый CSV, чекпоинты и реальные журналы включены.
